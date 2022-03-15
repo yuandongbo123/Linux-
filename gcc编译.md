@@ -38,9 +38,9 @@
 - 4.运行可执行程序 ./a.out
   **链接器**：工作在链接阶段，工作是需要 -L 和 -l
    **动态连接器**
-               - **1 .环境变量法** 工作在程序运行阶段，工作时需要提供动态库所在目录位置
-               export LD_LIBRARY_PATH = 动态库路径
-               - **2. 永久生效**：写入终端配置文件 .bashrc 建议是使用绝对路径
+####  **1 .环境变量法** 工作在程序运行阶段，工作时需要提供动态库所在目录位置
+- export LD_LIBRARY_PATH = 动态库路径
+#### **2. 永久生效**：写入终端配置文件 .bashrc 建议是使用绝对路径
 ####                   1） vim ~/ .bashrc
 ####                   2) 写入 export LD_LIBRARY_PATH=动态链接库
 ####                   3） .. bashrc/  source ./bashrc /       重启终端  -->让修改的. bashrc生效
@@ -64,12 +64,12 @@
 - set args  设置main 参数
 - run 字串1 字串2
 - info b;查看断电信息表
-
-**例如**： 1. gcc - gdbtext.c -o a.out -g    进入调试状态
-                 2. gdb a.out
-                 3. l
-                 4. b 32
-                 5. run
+#### **例如**：
+- 1. gcc - gdbtext.c -o a.out -g    进入调试状态              
+- 2. gdb a.out
+-  3. l
+- 4. b 32
+- 5. run
 
 直接run gdb 时直接报错停止的地方就是出错的地方
 
