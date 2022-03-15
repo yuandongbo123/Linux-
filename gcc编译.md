@@ -73,6 +73,81 @@
 
 直接run gdb 时直接报错停止的地方就是出错的地方
 
+# makefilw 项目管理
+###  用途
+- 项目代码编译管理
+- 节省编译项目时间
+- 一次编译终身受益
+- 操作示例文件: add.c    sub.c  mul.c   dive.c   main.c
+
+- 命名：makefile  Makefile
+
+### 要求掌握
+- **1. 一个规则**
+目标：依赖条件（一个tab命令）
+#### 基本原则：
+1.若想生成目标，检查规则中的依赖条件是否存在，如不存在，则寻找是否有规则用来生成该依赖条件
+
+
+" vim Makefile
+"
+"#gcc hello.c - o hello
+  hello:hello.o（依赖）
+ 	gcc hello.o -o hello
+  hello.o:hello.c（依赖）
+	gcc -c hello.c -o hello.o
+"
+- make 完事之后在这个文件夹用make就可以编译了
+
+“”终极版
+ALL:a.out
+add.o:add.c
+	gcc -c add.c -o add.o
+sub.o:sub.c
+	gcc - c sub.c -o sub.o
+hello.o:hello.c
+	gcc -c hello.c -o hello.o
+div1.o:div1.c
+	gcc -c div1.c -o div1.o
+
+a.out:hello.o  add.o sub.o div1.o
+	gcc hello.o add.o sub.o div1.o  -o a.out
+""
+ALL 终极目标
+
+- **2. 2个函数**
+**1.  src =$(wildcard  ./*.c)** 找到当前目标下所有后缀为.c的文件，赋值给src
+**2. obj=$(patsubst %.c, %.o, $(src))** 将参数3中，包含参数1的部分，替换为参数2
+""
+src = $(wildcard *.c)
+obj = $(patsubst %.c, %.o, $(src))
+
+ALL:a.out
+
+a.out:$(obj)
+	gcc $(obj) -o a.out
+add.o:add.c
+	gcc -c add.c -o add.o
+sub.o:sub.c
+	gcc -c sub.c -o sub.o
+hello.o:hello.c
+	gcc -c hello.c -o hello.o
+div1.o:div1.c
+	gcc -c div1.c -o div1.o
+
+
+clean:
+	-rm -rf $(obj) a.out 
+ ""
+ ""
+make clean -n  删除多余的
+""
+- 3. 3个自动变量
+
+
+
+
+
 
 
 
