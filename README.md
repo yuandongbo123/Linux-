@@ -52,7 +52,7 @@ linux 网络编程和系统编程
 ## 关于执行文件路径的变量 $PATH
 - echo $PATH 显示路径 echo（显示 ）
 
-##文件查找
+## 文件查找
 - which 查找path环境变量
 - whereis 文件名或目录名
 - find  例如   
@@ -61,7 +61,7 @@ find ./ -size + 20M -size 40M | xargs ls-l;
 - grep 搜文件
 例如 grep -r 'copy' ./ n;
 
-##安装与卸载软件
+## 安装与卸载软件
 - apt - get
 - sudo vi /etc/apt/sources.list 更新原服务器
 - sudo apt-get update 更新源
@@ -70,7 +70,7 @@ find ./ -size + 20M -size 40M | xargs ls-l;
 - sudo dpkg -i 安装包名
 
 
-##压缩与解压**（鸟哥265页）**
+## 压缩与解压**（鸟哥265页）**
 - tar
 压缩：tar -jcv - f 文件名.tar.bz2
 查询：tar -jtv -f 文件.tar.bz2;
@@ -94,7 +94,7 @@ find ./ -size + 20M -size 40M | xargs ls-l;
 - sudo ifconfig eth0 IP 给eth0 配置临时ip
 - ping[选项] 主机名/ip地址
 
-#vim编辑器
+# vim编辑器
 - 按键说明（鸟哥293页）
 ### vim 打造vimIDE
 - 1. /etc/vim/virc （cd 进入）
@@ -109,7 +109,7 @@ find ./ -size + 20M -size 40M | xargs ls-l;
 
 
 
-#BASH和shell
+# BASH和shell
 - history 查看历史命令行
 - alias 命令别名设置功能 例如 alias lm = 'ls -al'
 - type name 查看命令是否是shell内剑的
