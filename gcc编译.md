@@ -41,10 +41,10 @@
                - **1 .环境变量法** 工作在程序运行阶段，工作时需要提供动态库所在目录位置
                export LD_LIBRARY_PATH = 动态库路径
                - **2. 永久生效**：写入终端配置文件 .bashrc 建议是使用绝对路径
-                  1） vim ~/ .bashrc
-                   2) 写入 export LD_LIBRARY_PATH=动态链接库
-                  3） .. bashrc/  source ./bashrc /       重启终端  -->让修改的. bashrc生效
-                 4）./a.out 生效
+####                   1） vim ~/ .bashrc
+####                   2) 写入 export LD_LIBRARY_PATH=动态链接库
+####                   3） .. bashrc/  source ./bashrc /       重启终端  -->让修改的. bashrc生效
+####                  4）./a.out 生效
 
 
 ##  gdb 调试工具（检查逻辑错误，检查不了语法错误）
