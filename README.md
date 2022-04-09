@@ -23,6 +23,10 @@ linux 网络编程和系统编程
 - sudo chown 新用户名 待修改文件
 - sudo addgroup   组名 创建新租
 - sudo chgrp 修改文件所属用户组
+> - ctrl + z 挂起
+> - fg 恢复
+> - ctrl + c 强制退出
+
 
 
 ## linux系统文件类型
