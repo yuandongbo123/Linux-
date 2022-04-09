@@ -43,6 +43,7 @@ linux 网络编程和系统编程
 - chgrp ：修改文件所属用户群
 - chown：修改文件拥有着
 - chmod：修改文件的权限
+- 推荐字符改变: chomd 777 text.txt   /  chomd 764 text.txt
 - umask -S 显示文件的默认权限
 
 
