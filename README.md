@@ -14,8 +14,9 @@ linux 网络编程和系统编程
 - head 文件路径  显示文件前几行
 - tali 文件路径 显示文件后几行
 - tree 按树状显示文件结构 (sudo apt -get install tree)
-- wc
+- wc -c 查看文件有多少行
 - du 显示磁盘大小
+- du -sh 查看大小
 - df 查看磁盘情况
 - ln -S 目标路径 源文件   软连接
 - sudo address 添加用户
@@ -82,6 +83,8 @@ find ./ -size + 20M -size 40M | xargs ls-l;
 ## 进程管理
 - ps 查看进程
 - ps aux 查看所有进程
+- top 所有进程
+- top  z 查看最多进程
  - env 查看当前环境变量
 - vim  ~/.bashrc 配置当前用户环境变量
 - vim /etc/profile 配置当前用户环境变量
