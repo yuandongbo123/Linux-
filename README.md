@@ -23,9 +23,14 @@ linux 网络编程和系统编程
 - sudo chown 新用户名 待修改文件
 - sudo addgroup   组名 创建新租
 - sudo chgrp 修改文件所属用户组
+- 推出快捷键
 > - ctrl + z 挂起
 > - fg 恢复
 > - ctrl + c 强制退出
+> - 如果还不行
+> ps -u 查看进程数
+> kill -num 杀死进程
+
 
 
 
